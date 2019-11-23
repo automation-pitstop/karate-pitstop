@@ -49,6 +49,18 @@
 					<exclude>**/*.java</exclude>
 				</excludes>
 			</testResource>
+			<testResource>
+				<directory>src/test/features</directory>
+				<excludes>
+					<exclude>**/*.java</exclude>
+				</excludes>
+			</testResource>
+			<testResource>
+				<directory>src/test/java/com/automation/pitstop/scripts</directory>
+				<excludes>
+					<exclude>**/*.java</exclude>
+				</excludes>
+			</testResource>
 		</testResources>
 		<plugins>
 			<plugin>
@@ -60,10 +72,6 @@
 					<source>${java.version}</source>
 					<target>${java.version}</target>
 					<compilerArgument>-Werror</compilerArgument>
-					<!-- <includes>
-						<include>**/KarateRunner.java</include>
-						<include>**/DemoTestParallel.java</include>
-					</includes> -->
 				</configuration>
 			</plugin>
 			<plugin>
@@ -72,8 +80,7 @@
 				<version>3.0.0-M3</version>
 				<configuration>
 					<includes>
-						<!-- <include>com.karate.runner/DemoTest.java</include> -->
-						<include>**/DemoTestParallel.java</include>
+						<include>**/CIRunner.java</include>
 					</includes>
 					<systemProperties>
 						<karate.options>--tags ~@ignore</karate.options>

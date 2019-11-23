@@ -1,0 +1,4 @@
+{
+   "LIST_USERS":"api/users?page=2",
+   "SINGLE_USER":api/users/2
+}
