@@ -1,5 +1,9 @@
 "# karate-pitstop" 
 
+This project is configured to run both locally and on maven.
+Running on Maven will provide Cucumber reporting(Easy to view in Jenkins)
+Running locally will provide Karate reporting.
+
 Maven commands to run test on CI :
 
 mvn clean test ==> This will run all the features under features folder
